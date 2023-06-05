@@ -1,0 +1,10 @@
+/* CSS Front-end Requirements
+Form is styled and easy to use
+All Puppy Bowl players are rendered on card elements with their information */
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
