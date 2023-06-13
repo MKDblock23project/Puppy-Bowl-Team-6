@@ -8,3 +8,36 @@ All Puppy Bowl players are rendered on card elements with their information */
   margin: 0;
   box-sizing: border-box;
 }
+
+h1{
+color: rgb(181, 196, 202);
+background-color: rgb(198, 118, 20);
+
+}
+div{
+color: rgb(95, 6, 6);
+box-shadow: 0cqmin;
+background-position: 0cap;
+}
+h2{
+
+  color: crimson;
+  text-shadow: 0cqw;
+  border: 1px;
+
+}
+button{
+  
+background-color: blueviolet;
+text-emphasis-color:rgb(180, 197, 144) ;
+text-decoration: wavy;
+text-decoration: double;
+display: flex;
+
+}
+p{
+
+  background-color: rgb(228, 185, 136);
+
+}
+
