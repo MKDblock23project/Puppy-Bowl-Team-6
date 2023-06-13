@@ -52,13 +52,32 @@ const deletePlayer = async (id) => {
 }
 
 
+
 const addNewPlayer = async (playerObj) => {
   try {
-
+    const response = await fetch('/players',{method: 'POST',headers:{'Content-Type':'application/json'},
+    body: JSON.stringify(playerObj)
+  });
+  
+  if(!response.ok) {throw new error('Failed to add player');
+}
+console.log('Player added successfully:',playerObj);
   } catch (err) {
     console.error("Oops, something went wrong with adding that player!", err);
   }
 };
+
+const form = document.getElementById('new-players-form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault()
+
+const name = document.getElementById('name').value;
+const breed = document.getElementById('breed').value;
+const status = document.getElementById('status').value;
+const player = {name, breed, status};
+addNewPlayer(player);
+});
+
 
 //--- POST /api/2302-acc-et-web-pt-a/players/players/
 
